@@ -1,6 +1,7 @@
 # yj_appliance4homebridge
 Make you old home appliance smart home ready!
 This small python script is turning an old tumble dryer or any other old home appliance *smart* by hooking it up to [homebridge](https://github.com/homebridge/homebridge) so it can be used in Apple HomeKit and Google Home Assistant (via [homebridge-gsh](https://github.com/oznu/homebridge-gsh)https://github.com/oznu/homebridge-gsh) alike.
+
 In fact I have a some years old [Beko DE8635RX](https://www.beko.com/de-de/produkte/trockner/trockner-w%C3%A4rmepumpentrockner-8-kg-de8635rx) that is not smart, which is good. But when the machine is done with tumbling my clothes, it keeps itsself in a somewhat standby that consumes about 11 Watt of energy, which I dislike. so I wrote this small script to get notified when the machine is doing that and I can go into the basement, take out the clothes and turn that thing off. Yes, I am somewhat lazy.
 
 # Prerequisites
