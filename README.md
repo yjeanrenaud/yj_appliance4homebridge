@@ -10,7 +10,7 @@ In fact I have a some years old [Beko DE8635RX](https://www.beko.com/de-de/produ
 - the scripts needs to run permanently, so I hooked it up on a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/) which I use for various other tasks in my home already. (for instance, it hosts the [homebridge](https://github.com/homebridge/homebridge) installation, too)
 
 # Setup
-The setup is easy. You configure the[Tasmota smart meter](https://www.pocketpc.ch/magazin/testberichte/smart-home/review-refoss-smarte-wlan-steckdosenadapter-mit-tasmota-firmware-im-test-91562/) to a fixed IP address and enable its HTTP API. This is afaik enabled by default, but you may find the settiungs under *Configuration*, *Configure Other* where you may just check the box for *HTTP API enable* and hit *Save*.
+The setup is easy. You configure the [Tasmota smart meter](https://www.pocketpc.ch/magazin/testberichte/smart-home/review-refoss-smarte-wlan-steckdosenadapter-mit-tasmota-firmware-im-test-91562/) to a fixed IP address and enable its HTTP API. This is afaik enabled by default, but you may find the settiungs under *Configuration*, *Configure Other* where you may just check the box for *HTTP API enable* and hit *Save*.
 Then, the python script needs three values (`tasmota_hostname`, `power_min` and `power_max`) from you:
 - on line 22: `tasmota_hostname ="192.168.1.11" ` you obviously enter the IP-Address of your Tasmotaenergy meter in place (or the hostname if you're fancy avahi/bonjour)
 - on line 36: `power_min = 1` is the lower limit
