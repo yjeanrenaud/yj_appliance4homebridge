@@ -10,8 +10,8 @@ In fact I have a some years old [Beko DE8635RX](https://www.beko.com/de-de/produ
 
 # Setup
 The setup is easy. You configure the[Tasmota smart meter](https://www.pocketpc.ch/magazin/testberichte/smart-home/review-refoss-smarte-wlan-steckdosenadapter-mit-tasmota-firmware-im-test-91562/) to a fixed IP address and enable its HTTP API. This is afaik enabled by default, but you may find the settiungs under *Configuration*, *Configure Other* where you may just check the box for *HTTP API enable* and hit *Save*.
-Then, the python script needs three values (`hostname`, `power_min` and `power_max`) from you:
-- on line 22: `hostname ="192.168.1.11" ` you obviously enter the IP-Address of your Tasmotaenergy meter in place (or the hostname if you're fancy avahi/bonjour)
+Then, the python script needs three values (`tasmota_hostname`, `power_min` and `power_max`) from you:
+- on line 22: `tasmota_hostname ="192.168.1.11" ` you obviously enter the IP-Address of your Tasmotaenergy meter in place (or the hostname if you're fancy avahi/bonjour)
 - on line 36: `power_min = 1` is the lower limit
 - on line 37: `power_max = 12` that's the upper limit. These two values specify when we consider the appliance to be in a standby mode. For the named Beko DE8635RX that is about 11 Watt.
 - *(optional)* on line 27: `port = 8099` may be configured to any port available at your machine.
